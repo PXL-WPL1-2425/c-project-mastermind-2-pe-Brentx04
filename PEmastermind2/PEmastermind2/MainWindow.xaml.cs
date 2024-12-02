@@ -246,7 +246,7 @@ namespace Mastermind
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Voer uw naam in.");
+            MessageBox.Show("Voer uw naam in Nieuwspel.");
         }
 
         private void closeApp_Click(object sender, RoutedEventArgs e)

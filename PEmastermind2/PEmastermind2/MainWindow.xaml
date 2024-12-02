@@ -65,15 +65,21 @@
 
             <Menu x:Name="Hoofdmenu" HorizontalAlignment="Left" VerticalAlignment="Top">
                 <MenuItem Header="Bestand">
-                    <MenuItem Header="Nieuwspel"></MenuItem>
+                    <MenuItem Header="Nieuwspel" >
+                        <TextBox x:Name="userName" Text="Naam:" IsEnabled="False" ></TextBox>
+                    </MenuItem>
                     <MenuItem Header="Highscores"></MenuItem>
                     <MenuItem x:Name="closeApp" Header="Afsluiten" Click="closeApp_Click"></MenuItem>
                 </MenuItem>
                 <MenuItem Header="Instellingen">
-                    <MenuItem Header="Aantalpogingen"></MenuItem>
+                    <MenuItem Header="Aantalpogingen">
+                        <TextBox x:Name="attemptNummer" Text="Nummer pogingen:"></TextBox>
+                        <Slider x:Name="attemptslider" HorizontalAlignment="Left" Margin="115,0,0,0" VerticalAlignment="Center" Width="120"></Slider>
+                    </MenuItem>
                 </MenuItem>
 
             </Menu>
+            <TextBox x:Name="userName1" HorizontalAlignment="Left" Margin="575,352,0,0" TextWrapping="Wrap" Text="Naam:" VerticalAlignment="Top" Width="120" Visibility="Hidden"/>
 
 
         </Grid>
