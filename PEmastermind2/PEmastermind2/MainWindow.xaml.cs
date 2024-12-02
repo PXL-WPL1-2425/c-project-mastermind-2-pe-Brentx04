@@ -35,12 +35,14 @@ namespace Mastermind
         }
 
 
+
         private void InitializeTimer()
         {
             timer = new DispatcherTimer();
             timer.Interval = TimeSpan.FromSeconds(1);
             timer.Tick += Timer_Tick;
         }
+
 
 
         private void Timer_Tick(object sender, EventArgs e)
@@ -105,12 +107,8 @@ namespace Mastermind
 
 
                 if (result == MessageBoxResult.Yes)
-                {
-                    comboBox1.Items.Clear();
-                    comboBox2.Items.Clear();
-                    comboBox3.Items.Clear();
-                    comboBox4.Items.Clear();
-
+                    {
+           
                     penaltyPointsLabel.Content = null;
 
                     attempts = 0;
@@ -244,6 +242,11 @@ namespace Mastermind
             {
                 e.Cancel = true;
             }
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Voer uw naam in.");
         }
 
     }
