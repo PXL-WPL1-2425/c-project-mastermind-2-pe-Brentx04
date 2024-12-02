@@ -249,5 +249,9 @@ namespace Mastermind
             MessageBox.Show("Voer uw naam in.");
         }
 
+        private void closeApp_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
     }
 }

@@ -67,7 +67,7 @@
                 <MenuItem Header="Bestand">
                     <MenuItem Header="Nieuwspel"></MenuItem>
                     <MenuItem Header="Highscores"></MenuItem>
-                    <MenuItem Header="Afsluiten"></MenuItem>
+                    <MenuItem x:Name="closeApp" Header="Afsluiten" Click="closeApp_Click"></MenuItem>
                 </MenuItem>
                 <MenuItem Header="Instellingen">
                     <MenuItem Header="Aantalpogingen"></MenuItem>
